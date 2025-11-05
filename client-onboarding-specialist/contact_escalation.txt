@@ -1,4 +1,4 @@
-[MSP_NAME] CONTACT INFORMATION AND ESCALATION PROCEDURES
+Mirrored Storage CONTACT INFORMATION AND ESCALATION PROCEDURES
 
 IMPORTANT: Replace ALL contact information below with your actual team details.
 
@@ -7,10 +7,10 @@ PRIMARY SUPPORT CHANNELS
 ================================================================================
 
 Help Desk (Technical Support):
-Phone: (XXX) XXX-XXXX
-Email: support@[yourcompany].com
-Portal: https://portal.[yourcompany].com
-Hours: [Specify based on tier - 8×5, 24×7, etc.]
+Phone: (214) 550-0550
+Email: support@mirroredstorage.com
+Portal: https://portal.mirroredstorage.com
+Hours: 8×5
 
 Client Portal:
 - Submit tickets
@@ -30,7 +30,7 @@ Best Practices for Contacting Support:
 AFTER-HOURS EMERGENCY SUPPORT
 ================================================================================
 
-Emergency Line (Premium Clients Only): (XXX) XXX-XXXX
+Emergency Line (Premium Clients Only): (214) 669-8843
 
 What Qualifies as an Emergency:
 - Complete network or system outage
@@ -106,8 +106,8 @@ ACCOUNT MANAGEMENT TEAM
 ================================================================================
 
 Your Dedicated Account Manager: [To be assigned during onboarding]
-Email: [accountmanager]@[yourcompany].com
-Direct Line: (XXX) XXX-XXXX
+Email: sales@mirroredstorage.com
+Direct Line: (214) 550-0550
 Responsibilities:
 - Your primary point of contact for non-technical matters
 - Monthly/quarterly business reviews
@@ -116,8 +116,8 @@ Responsibilities:
 - Project coordination
 
 Virtual CIO (Premium Tier): [To be assigned during onboarding]
-Email: [vcio]@[yourcompany].com
-Direct Line: (XXX) XXX-XXXX
+Email: sales@mirroredstorage.com
+Direct Line: (214) 550-0550
 Responsibilities:
 - Strategic technology planning
 - IT budget forecasting
@@ -146,12 +146,12 @@ BILLING AND ADMINISTRATIVE CONTACTS
 ================================================================================
 
 Billing Questions:
-Email: billing@[yourcompany].com
-Phone: (XXX) XXX-XXXX
+Email: accounting@mirroredstorage.com
+Phone: (214) 550-0550
 Hours: Monday-Friday, 8am-5pm
 
 Account Changes (add/remove users, service tier changes):
-Contact your Account Manager or email: accounts@[yourcompany].com
+Contact your Account Manager or email: accounts@mirroredstorage.com
 
 ================================================================================
 AFTER-HOURS CONTACT GUIDELINES
