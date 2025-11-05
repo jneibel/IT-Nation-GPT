@@ -1,0 +1,506 @@
+[MSP_NAME] COMMON ISSUES QUICK REFERENCE GUIDE
+
+IMPORTANT: Customize this based on YOUR most common ticket types and your team's standard troubleshooting approaches.
+
+================================================================================
+SLOW PERFORMANCE ISSUES
+================================================================================
+
+Typical Priority: P3 (single user) or P2 (multiple users)
+Category: Performance/Software
+
+Key Questions to Ask:
+- When did it start?
+- Specific application or entire system slow?
+- Are other users affected?
+- Any recent changes (updates, new software)?
+- How slow? (unusable vs. just annoying)
+
+Quick Diagnostic Checks:
+1. Task Manager (CPU, Memory, Disk usage)
+2. Recent Windows updates installed?
+3. Available disk space (C: drive)
+4. Running antivirus scan?
+5. Network connectivity stable?
+
+Common Causes:
+- Windows updates running in background
+- Antivirus scan in progress
+- Low disk space (<10% free)
+- Memory leak from specific application
+- Too many startup programs
+- Malware/virus
+
+Initial Troubleshooting Steps:
+1. Restart the computer (fixes 40% of performance issues)
+2. Check Task Manager for resource hogs
+3. Clear temp files and browser cache
+4. Verify adequate disk space
+5. Update/restart problematic application
+
+Assignment: Level 1 (unless widespread or server-related)
+
+================================================================================
+PASSWORD RESET / ACCOUNT LOCKOUT
+================================================================================
+
+Typical Priority: P4 (unless blocking critical work, then P3)
+Category: Access/Permissions
+
+Key Questions:
+- User account locked or just forgot password?
+- Can they access anything else or completely locked out?
+- MFA set up? Do they have access to MFA device?
+- When do they need access? (urgency check)
+
+Quick Resolution:
+1. Verify user identity
+2. Check account status (locked, disabled, expired?)
+3. Reset password via admin portal
+4. Unlock account if needed
+5. Verify MFA is working
+6. Test login
+
+Common Causes:
+- Too many failed login attempts
+- Password expired
+- Caps Lock on during login attempts
+- Typing old password out of habit
+- Account disabled (termed employee?)
+
+Estimated Resolution Time: <15 minutes
+
+Assignment: Level 1
+
+Security Note: Always verify identity before resetting passwords
+
+================================================================================
+EMAIL ISSUES
+================================================================================
+
+Priority Varies:
+- Can't send OR receive (organization-wide): P1
+- Can't send OR receive (multiple users): P2
+- Can't send OR receive (single user): P3
+- Slow email, minor issues: P3/P4
+
+Category: Email/Communication
+
+SCENARIO: Can't Send Email
+
+Key Questions:
+- Error message received?
+- Specific recipient or all recipients?
+- Size of email/attachments?
+- Can they receive email?
+
+Quick Checks:
+1. Check sent items (did it actually send?)
+2. Attachment size (<25MB for most systems)
+3. Recipient email address correct?
+4. Check spam filter (is it blocking outbound?)
+5. Mailbox quota reached?
+
+Common Causes:
+- Attachment too large
+- Recipient address in blocklist
+- SMTP server issues
+- Account sending limits reached
+- Internet connectivity
+
+SCENARIO: Can't Receive Email
+
+Key Questions:
+- When did they last receive email?
+- Checked spam/junk folder?
+- Mailbox quota full?
+- Forwarding rules in place?
+
+Quick Checks:
+1. Check mailbox size vs. quota
+2. Review spam/junk folder
+3. Check mail flow (send test to themselves)
+4. Verify mail forwarding rules
+5. Check deleted items (accidental deletion?)
+
+Common Causes:
+- Mailbox full
+- Overzealous spam filter
+- Forwarding rule sending to wrong location
+- Inbox rule auto-deleting messages
+
+SCENARIO: Missing Emails
+
+Priority: P2/P3 depending on criticality
+Category: Email/Communication
+
+Key Questions:
+- Specific sender or all senders?
+- Time period missing?
+- Checked deleted items?
+- Any rules or filters set up?
+
+Quick Checks:
+1. Search all folders (including deleted items)
+2. Check retention policies
+3. Review inbox rules
+4. Check spam/junk folders
+5. Verify not archived
+
+Assignment: 
+- Single user issues: Level 1
+- Multiple users or mail flow: Level 2
+- Organization-wide: Level 2/3
+
+================================================================================
+NETWORK CONNECTIVITY ISSUES
+================================================================================
+
+Priority Varies:
+- Complete outage: P1
+- Multiple users: P2
+- Single user: P3
+
+Category: Network/Connectivity
+
+SCENARIO: Single User Can't Connect
+
+Key Questions:
+- WiFi or wired?
+- Can they reach any websites?
+- Are other users affected?
+- Working from office or remote?
+- VPN required?
+
+Quick Checks:
+1. Network icon status (connected, limited, no connection)
+2. Airplane mode off?
+3. WiFi enabled?
+4. Correct network selected?
+5. Can they ping default gateway?
+6. DNS resolving?
+
+Quick Fixes:
+1. Disconnect/reconnect to network
+2. Restart network adapter
+3. Restart computer
+4. Forget and rejoin WiFi network
+5. Flush DNS cache
+6. Reset TCP/IP stack
+
+Assignment: Level 1
+
+SCENARIO: Multiple Users / Network Outage
+
+Priority: P1 if complete, P2 if partial
+Category: Network/Connectivity
+
+Immediate Actions:
+1. Verify scope (how many affected? which location?)
+2. Check internet connection at firewall
+3. Check core switches
+4. Test from multiple locations
+5. Check with ISP if needed
+
+Escalate Immediately: This is infrastructure - go to Level 2/3
+
+================================================================================
+PRINTER PROBLEMS
+================================================================================
+
+Priority:
+- Department printer down (critical function): P2
+- Single user can't print: P3
+- Minor print quality issues: P4
+
+Category: Printer/Peripherals
+
+SCENARIO: Can't Print
+
+Key Questions:
+- Shared printer or local printer?
+- Error message?
+- Other users affected?
+- Can they see the printer in devices?
+- Print queue backed up?
+
+Quick Troubleshooting:
+1. Check printer power and connections
+2. Clear print queue
+3. Restart print spooler service
+4. Restart printer
+5. Remove and re-add printer
+6. Update/reinstall printer driver
+7. Test from another computer
+
+Common Causes:
+- Print queue jammed with failed jobs
+- Printer offline
+- Driver issues after Windows update
+- Network connectivity to printer
+- Out of paper/toner (check physical printer)
+
+Quick Win: 80% of printer issues = clear queue + restart printer
+
+Assignment: Level 1
+
+================================================================================
+VPN / REMOTE ACCESS ISSUES
+================================================================================
+
+Priority:
+- Multiple users can't connect: P2
+- Single user can't work remotely: P3
+- VPN slow but working: P3/P4
+
+Category: Network/Remote Access
+
+Key Questions:
+- Error message when connecting?
+- Can they connect to any VPN?
+- Working from home/remote location?
+- Internet working otherwise?
+- Credentials recently changed?
+- MFA working?
+
+Quick Checks:
+1. VPN client up to date?
+2. Credentials correct (including MFA)?
+3. VPN service running?
+4. Internet connection stable at remote location?
+5. Firewall blocking VPN?
+6. Certificate valid?
+
+Common Causes:
+- Password recently changed (not updated in VPN)
+- MFA issues
+- VPN client needs update
+- Home router blocking VPN ports
+- Certificate expired
+- VPN server at capacity
+
+Quick Fixes:
+1. Disconnect and reconnect
+2. Restart VPN client
+3. Restart computer
+4. Re-enter credentials
+5. Check MFA device working
+
+Assignment: Level 1 (unless multiple users, then Level 2)
+
+================================================================================
+SOFTWARE / APPLICATION CRASHES
+================================================================================
+
+Priority: P3 (single user) or P2 (multiple users/critical app)
+Category: Software/Applications
+
+Key Questions:
+- Specific application or multiple apps?
+- When does it crash (startup, during use, specific action)?
+- Error message?
+- Recent updates?
+- Other users affected?
+
+Quick Diagnostics:
+1. Check Event Viewer for application errors
+2. Run application as administrator
+3. Check for application updates
+4. Verify system requirements met
+5. Check antivirus logs (false positive?)
+
+Common Causes:
+- Corrupt user profile
+- Application update needed
+- Conflicting software
+- Insufficient system resources
+- Corrupt installation
+- Antivirus interference
+
+Initial Troubleshooting:
+1. Restart application
+2. Restart computer
+3. Update application
+4. Repair/reinstall application
+5. Create new user profile (test)
+6. Check compatibility mode
+
+Assignment: Level 1 (unless mission-critical app, then Level 2)
+
+================================================================================
+SECURITY CONCERNS / SUSPICIOUS ACTIVITY
+================================================================================
+
+Priority: Always start at P2 (escalate to P1 if confirmed threat)
+Category: Security
+
+RED FLAG KEYWORDS:
+- Ransomware, encrypted, bitcoin, locked files
+- Hacked, breach, unauthorized access
+- Phishing (if clicked link or downloaded file)
+- Suspicious email, strange pop-ups
+- Data leak, exposed information
+- Multiple failed logins from unknown locations
+
+Immediate Actions:
+1. DO NOT tell user to do anything yet
+2. Escalate to Level 2/3 immediately
+3. Gather details:
+   - What did they see/receive?
+   - Did they click anything?
+   - Did they enter credentials anywhere?
+   - When did they notice it?
+4. Isolate if needed (disconnect from network)
+5. Preserve evidence (screenshots, log files)
+
+NEVER Downplay Security Concerns:
+- "Probably nothing" can become "definitely ransomware"
+- Better to overreact than underreact
+- Get senior tech involved immediately
+
+Assignment: Always Level 2/3 + notify security team/account manager
+
+================================================================================
+MOBILE DEVICE ISSUES
+================================================================================
+
+Priority: P3 (unless executive or business-critical)
+Category: Mobile Devices
+
+SCENARIO: Can't Receive Work Email on Phone
+
+Key Questions:
+- Type of device (iPhone, Android)?
+- Recently changed password?
+- Other apps working?
+- WiFi or cellular?
+- MFA set up on device?
+
+Quick Fixes:
+1. Remove and re-add email account
+2. Check account password (recently changed?)
+3. Verify MFA not blocking sync
+4. Check ActiveSync enabled
+5. Update email app
+6. Restart device
+
+SCENARIO: Can't Connect to Company WiFi
+
+Quick Checks:
+1. Correct WiFi network selected?
+2. Password correct?
+3. Device previously connected or first time?
+4. Other devices connecting?
+5. MAC address filtering enabled?
+
+Assignment: Level 1
+
+================================================================================
+ACCESS / PERMISSION ISSUES
+================================================================================
+
+Priority: P3 (unless blocking critical work, then P2)
+Category: Access/Permissions
+
+Key Questions:
+- What are they trying to access?
+- Error message?
+- Did they previously have access?
+- Other users in same role have access?
+- Recent role/department change?
+
+Quick Checks:
+1. Verify user account active
+2. Check group memberships
+3. Review folder/file permissions
+4. Check if resource is online
+5. Verify they're supposed to have access
+
+Common Causes:
+- Not in correct security group
+- Permissions not set correctly
+- Resource offline/unavailable
+- User moved departments (old access removed)
+
+Resolution:
+1. Verify access should be granted (check with manager if unsure)
+2. Add to appropriate security group
+3. Set explicit permissions if needed
+4. Test access
+5. Document in ticket
+
+Assignment: Level 1 (unless complex Active Directory issues)
+
+================================================================================
+BACKUP FAILURES / ISSUES
+================================================================================
+
+Priority: Always P2 (data protection is critical)
+Category: Backup/Recovery
+
+Why This is Always P2:
+- No backup = no data protection
+- Each day without backup increases risk
+- Regulatory/compliance implications
+
+Key Questions:
+- When did backup last succeed?
+- Error messages in backup logs?
+- Change to system recently?
+- Disk space available on backup destination?
+
+Immediate Actions:
+1. Check backup logs for specific errors
+2. Verify backup destination accessible and has space
+3. Test backup manually if scheduled backup failed
+4. Notify account manager/vCIO
+5. Don't let this sit - escalate if Level 1 can't resolve quickly
+
+Assignment: Level 1 can investigate, but escalate to Level 2 if not resolved within 2 hours
+
+================================================================================
+TRIAGE TIPS FOR COMMON SCENARIOS
+================================================================================
+
+"Everything is Slow":
+- Ask: Computer, network, or specific application?
+- Single user = P3, multiple users = P2
+- Check: recent updates, internet speed, server load
+
+"I Can't Log In":
+- Check: account locked vs. wrong password vs. system down
+- Verify identity before resetting
+- If system down (multiple users can't log in) = P2
+
+"My Computer Won't Start":
+- Remote user or in office?
+- Blue screen, black screen, or won't power on?
+- Can they work from another device?
+- Priority depends on user criticality and availability of backup device
+
+"I Got a Weird Email":
+- If they clicked or downloaded = P2 security concern
+- If just received and suspicious = P4 (educate and delete)
+- Forward to security team for analysis
+
+"Nothing Works":
+- Clarify: truly nothing or specific things?
+- Check scope: just them or multiple users?
+- If actually nothing = P1
+- Usually it's "several things" = P2
+
+================================================================================
+WHEN IN DOUBT
+================================================================================
+
+If you're unsure about priority:
+1. Ask yourself: "What happens if this isn't fixed in the next hour?"
+2. Consider business impact over technical severity
+3. It's better to escalate and have it de-escalated than miss a critical issue
+4. Get a second opinion from senior tech or supervisor
+
+Remember: Priority can change as more information is gathered
+- "Printer down" (P3) can become "Shipping labels won't print, trucks waiting" (P2)
+- "Computer slow" (P3) can become "Entire sales team can't access CRM" (P1)
+
+Always gather context before finalizing priority.
