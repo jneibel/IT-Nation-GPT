@@ -1,0 +1,47 @@
+VCIO UTILIZATION TARGETS AND THRESHOLDS
+
+Target Utilization per VCIO:
+- Optimal range: 25-30 hours per week on client work
+- Available hours: 35 hours per week (accounting for internal time)
+
+Client Utilization Thresholds:
+- Under-serviced: <75% of allocated hours for 3+ consecutive weeks
+- Over-serviced: >120% of allocated hours for 3+ consecutive weeks
+- At-risk: Renewal within 90 days AND utilization <70% of allocated hours
+- Upsell opportunity: Consistently at 95-110% of allocated hours for 8+ weeks
+
+Revenue Opportunity Estimates:
+- Upsell potential: Current MRR × 30% for clients consistently exceeding hours
+- At-risk value: MRR × 12 for annual contract value
+
+Priority Flags:
+1. At-risk renewals within 60 days
+2. Under-serviced clients (4+ weeks below threshold)
+3. Overloaded VCIOs (>32 hours/week for 3+ weeks)
+4. High-value clients showing declining engagement
+
+Load Balancing Guidelines:
+- If one VCIO is >32 hours/week and another is <25 hours/week, consider rebalancing
+- When rebalancing, prioritize moving clients with:
+  * Lower complexity (easier transition)
+  * Similar service tier experience on receiving VCIO
+  * Geographic proximity to receiving VCIO (if applicable)
+  * Relationship maturity (avoid moving brand new clients)
+
+Red Flag Escalation:
+- Any client showing <50% utilization for 4+ weeks = immediate owner notification
+- Any VCIO consistently >35 hours/week = burnout risk, address immediately
+- Any Premium client showing declining engagement = executive escalation
+
+Weekly Briefing Focus:
+- Prioritize actionable items (what needs attention THIS WEEK)
+- Highlight revenue opportunities (upsells) and risks (at-risk renewals)
+- Keep format consistent and scannable
+- Always include specific hour recommendations
+
+Customization Notes:
+[MSPs should adjust these thresholds based on their business model:
+- Adjust optimal VCIO hours based on your staffing model
+- Modify utilization percentages based on your service delivery approach
+- Update revenue multipliers based on your pricing structure
+- Add industry-specific considerations if relevant]
