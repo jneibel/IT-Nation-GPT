@@ -1,6 +1,6 @@
-[MSP_NAME] BRAND VOICE GUIDELINES
+Mirrored Storage BRAND VOICE GUIDELINES
 
-IMPORTANT: This is the most critical file for making your Custom GPT sound like YOUR company, not a generic MSP. Spend time customizing this to reflect your actual communication style.
+IMPORTANT: This is the most critical file for making your Custom GPT sound like Mirrored Storage company, not a generic MSP. Spend time customizing this to reflect your actual communication style.
 
 ================================================================================
 OVERALL TONE AND PERSONALITY
